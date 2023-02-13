@@ -1,12 +1,11 @@
-
 function plaadid():number{
 
     let klaviatuur=require("readline-sync");
     //hetkel sisesta andmed ühes mõõtühikus!!!
-    let plaat:number=klaviatuur.question("Plaadi laius cm: ");
+    let plaat:number=klaviatuur.question("Plaadi laius mm: ");
     let vuuk:number=klaviatuur.question("Vuugivahe on mm: ");
-    let laius:number=klaviatuur.question("Põranda laius on m: ");
-    let pikkus:number=klaviatuur.question("Põranda pikkus on m: ");
+    let laius:number=klaviatuur.question("Põranda laius on mm: ");
+    let pikkus:number=klaviatuur.question("Põranda pikkus on mm: ");
     
     //teisendame
     //plaat=plaat/100;
@@ -19,8 +18,8 @@ function plaadid():number{
     let plaadid_kokku:number= laius_plaadid*pikkus_plaadid;
 
     //Palju plaate läheb
-    console.log("\nPikkupidi läheb "+ pikkus_plaadid+" plaati");
-    console.log("Laiupidi läheb "+ laius_plaadid+" plaati");
+    console.log("\nPikkupidi läheb "+ pikkus_plaadid+" plaati vaja");
+    console.log("Laiupidi läheb "+ laius_plaadid+" plaati vaja");
     console.log("Vaja läheb vähemalt "+ plaadid_kokku+" plaati");
     return plaadid_kokku;
 }
