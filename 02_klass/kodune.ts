@@ -7,7 +7,7 @@ class Sein{
         let laius_plaadid:number= Math.ceil((this.laius+this.vuuk)/(this.plaat+this.vuuk));
         let pikkus_plaadid:number= Math.ceil((this.pikkus+this.vuuk)/(this.plaat+this.vuuk));
         let plaadid_kokku:number= laius_plaadid*pikkus_plaadid;
-        return "Pikkupidi läheb "+ pikkus_plaadid+" plaati vaja\nLaiupidi läheb "+ laius_plaadid+" plaati vaja\nVaja läheb vähemalt "+ plaadid_kokku+" plaati";
+        return "Pikkupidi läheb "+ pikkus_plaadid+" plaati vaja\nLaiupidi läheb "+ laius_plaadid+" plaati vaja\nVaja läheb vähemalt "+ plaadid_kokku+" plaati\n";
     }
 
     porand():number{
